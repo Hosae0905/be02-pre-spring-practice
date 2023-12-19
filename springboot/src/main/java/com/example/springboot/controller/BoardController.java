@@ -5,6 +5,7 @@ import com.example.springboot.model.BoardReq;
 import com.example.springboot.model.GetProductRes;
 import com.example.springboot.model.PatchProductReq;
 import com.example.springboot.service.BoardService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

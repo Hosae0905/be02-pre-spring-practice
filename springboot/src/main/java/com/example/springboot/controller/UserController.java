@@ -35,4 +35,13 @@ public class UserController {
             return ResponseEntity.badRequest().body("로그인 실패");
         }
     }
+
+    @RequestMapping(method = RequestMethod.POST, value = "/update")
+    public ResponseEntity<Object> update(String id, String pw, String newPw) {
+        if(userService.update(id, pw, newPw)) {
+            return ResponseEntity.ok().body("수정 성공");
+        } else {
+            return ResponseEntity.badRequest().body("수정 실패");
+        }
+    }
 }
